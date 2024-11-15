@@ -1,1 +1,1 @@
-https://NeRGaTBooT.github.io/Portfolio/
+https://NeRGaTBooT.github.io/SchoolSite/
