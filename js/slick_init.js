@@ -4,8 +4,8 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      autoplay: false,
-      autoplaySpeed: 3000
+      autoplay: true,
+      autoplaySpeed: 2500
     });
   
    
