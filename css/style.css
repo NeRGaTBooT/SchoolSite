@@ -171,6 +171,19 @@ SECTION ABOUT
 .section_about_header_title{
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section_title, .section_desc{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section_desc{
+    font-size: 20px;
 }
 
 .section_about_body{
@@ -215,4 +228,80 @@ SECTION ABOUT
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+
+.life_tabs_container{
+    overflow: hidden;
+}
+
+.life_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.tab-button:hover {
+}
+
+.tab-button.active {
+    background-color: #4C529D;
+    color: #fff;
+}
+
+.tab-content {
+    padding: 20px 0;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+
+.section_life{
+    background: rgb(76,82,144);
+background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%, rgba(124,153,192,1) 100%);
+}
+
+.tab_content_item_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab_content_items{
+    flex: 1;
+    min-width: 230px;
+}
+
+.content_items_img{
+    height: 260px;
+}
+
+.content_items_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content_items_body{
+    padding: 15px;
+}
+
+.content_items_title, .content_items_desc{
+    margin-bottom: 15px;
 }
