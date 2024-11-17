@@ -46,7 +46,7 @@ body{
 
 }
 
-section{
+section, footer{
     padding: 100px 0;
 }
 
@@ -60,6 +60,32 @@ HEADER
 =============================================================
 */
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.burger {
+    display: none; /* Скрыть бургер-меню по умолчанию */
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.burger-icon {
+    outline: none; /* Убираем стандартное выделение при нажатии */
+
+}
+
+.burger img {
+    width: 25px;
+    height: 25px;
+    margin: 4px 0;
+    filter: invert(1);
+}
+
 .header{
     background-color: #4C529D;
     border-bottom: 4px solid #7d81bb;
@@ -72,9 +98,30 @@ HEADER
     justify-content: space-between;
 }
 
+
+/* 
+=========================================================
+=========================================================
+INDEX.HTML
+=========================================================
+=========================================================
+
+*/
+
+.section_slider{
+    padding-top: 50px;
+}
+
+.section_slider_title h1{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+
 .logo a{
     color: #fff;
     line-height: 20px;
+    font-size: 16px;
 }
 
 .header .main_menu ul{
@@ -143,12 +190,14 @@ HEADER
     justify-content: center;
     gap: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     -webkit-box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
 }
+
+
 
 
 /* 
@@ -233,6 +282,7 @@ SECTION ABOUT
 
 .life_tabs_container{
     overflow: hidden;
+    display: flex;flex-direction: column;
 }
 
 .life_tabs {
@@ -243,15 +293,18 @@ SECTION ABOUT
 
 .tab-button {
     flex: 1;
-    padding: 5px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 20px;
     background-color: #fff;
+    transition: all ease .3s;
 }
 
 .tab-button:hover {
+    background-color: #868cd4;
+    color: #fff;
 }
 
 .tab-button.active {
@@ -286,22 +339,289 @@ background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%
 .tab_content_items{
     flex: 1;
     min-width: 230px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* height: 550px; */
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
 }
 
 .content_items_img{
     height: 260px;
+    min-height: 260px;
 }
 
 .content_items_img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 .content_items_body{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .content_items_title, .content_items_desc{
     margin-bottom: 15px;
 }
+
+.content_items_desc{
+    display: -webkit-box; /* Чтобы поддержать Safari и Chrome */
+    display: -moz-box; /* Для Firefox */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+}
+
+.content_items_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content_items_date{
+    margin-top: auto;
+}
+
+.content_items_btn{
+    display: flex;
+    color: #4C529D;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content_items_data{
+    font-size: 11px;
+    color: #888888;
+}
+
+.section_life_btn_more{
+    background: #4C529D;
+    margin: 0 auto;
+    width: max-content;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.section_slider_rek_block{
+    padding: 30px;
+    background: #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 27px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 27px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 27px 5px rgba(34, 60, 80, 0.2);
+}
+
+.section_slider_rek_wrap .slick-track{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
+.footer{
+    background: #15183E;
+    color: #fff;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer_wrap{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer_wrap_items{
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer_wrap_items:first-child{
+    flex: 2;
+}
+
+.footer_wrap_items_title, .footer_wrap_items ul li:first-child{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer_wrap_items_desc{
+    color: #b6b6b6;
+}
+
+.footer_wrap_items_desc p {
+    margin-bottom: 15px;
+}
+
+.footer_wrap_items ul li{
+    margin-bottom: 10px;
+}
+
+.footer_wrap_items ul li a{
+    color: #b6b6b6;
+    transition: all ease .3s;
+}
+
+.footer_wrap_items ul li a:hover{
+    color: #fff;
+}
+
+.footer_wrap_items_maps{
+    width: 100%;
+    min-height: 300px;
+}
+
+.footer_wrap_items_maps iframe {
+    width: inherit;
+    min-height: inherit;
+}
+
+/* 
+=========================================================
+=========================================================
+ABOUT_SCHOOL.HTML
+=========================================================
+=========================================================
+
+*/
+
+/* 
+=========================================================
+=========================================================
+CONNECTION_SCHOOL.HTML
+=========================================================
+=========================================================
+
+*/
+
+/* 
+=========================================================
+=========================================================
+EDUCATION.HTML
+=========================================================
+=========================================================
+
+*/
+
+/* 
+=========================================================
+=========================================================
+NEWS.HTML
+=========================================================
+=========================================================
+
+*/
+.section_news_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.section_news_items{
+    padding: 25px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
+
+}
+
+.section_news_items_title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section_news_items_date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.news_items_body_img{
+    height: 535px;
+}
+
+.news_items_body_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section_news_items_date img{
+    width: 20px;
+    height: 20px;
+}
+
+.news_items_body_desc{
+    padding: 20px 0;
+}
+
+.news_items_body_desc p {
+    margin-bottom: 20px;
+}
+
+.news_items_body_desc p:last-child{
+    margin-bottom: 0;
+}
+
+.news_items_body_desc ol{
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=========================================================
+=========================================================
+ONLINE_INQUIRIES.HTML
+=========================================================
+=========================================================
+
+*/
+
+/* 
+=========================================================
+=========================================================
+SCHEDULE.HTML
+=========================================================
+=========================================================
+
+*/
+
+/* 
+=========================================================
+=========================================================
+TRAINING.HTML
+=========================================================
+=========================================================
+
+*/
