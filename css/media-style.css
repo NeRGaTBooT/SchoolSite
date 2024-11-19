@@ -66,6 +66,33 @@
 }
 
 @media (max-width: 768px) {
+    .section_education_body_list table table, 
+    .section_education_body_list table thead, 
+    .section_education_body_list table tbody, 
+    .section_education_body_list table th, 
+    .section_education_body_list table td, 
+    .section_education_body_list table tr {
+        display: block;
+    }
+
+    .section_education_body_list table thead tr {
+        display: none;
+    }
+
+    .section_education_body_list table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .section_education_body_list table td {
+        text-align: left;
+    }
+
+    .section_education_body_list table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
   
 }
 

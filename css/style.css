@@ -668,6 +668,7 @@ border-radius: 30px;
     border-radius: 10px;
     padding: 5px 10px;
     width: max-content;
+    position: relative;
 }
 
 .training_box_title_1{
@@ -685,16 +686,74 @@ border-radius: 30px;
     margin-bottom: 20px;
 }
 
-.training_box_desc_btn{
-    display: block;
-    width: max-content;
-    background-color: #fff;
-    color: #4d4078 !important;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all ease .3s;
+.training_box_linkPref::after{
+    content: ""; /* Обязательное свойство для псевдоэлементов */
+    display: inline-block; /* Чтобы псевдоэлемент вел себя как блочный */
+    width: 20px; /* Ширина иконки */
+    height: 20px; /* Высота иконки */
+    background-image: url('../img/icons/chevron-back.svg'); /* Путь к изображению */
+    background-size: cover; /* Размер иконки */
+    margin-right: 5px; /* Отступ справа от иконки */
+    position: absolute;
+    top: 4px;
+    right: -30px;
 }
 
-.training_box_desc_btn:hover{
-    background-color: #b9b9b9;
+.section_education_title{
+    font-size: 30px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.section_education_body_title{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.section_education_body_list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section_education_body{
+    padding: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
+}
+
+.section_education_wrap .section_education_body:nth-child(odd){
+    background: -webkit-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
+    background: -moz-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
+    background: linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
+
+    color: #fff;
+}
+
+.section_education_body_list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section_education_body_list table th, .section_education_body_list table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.section_education_body_list table th {
+    /* background-color: #f2f2f2; */
+}
+
+.section_education_body_list table tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+}
+
+.section_education_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
