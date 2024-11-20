@@ -43,6 +43,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #fcfcfc;
 
 }
 
@@ -658,8 +659,27 @@ border-radius: 30px;
 
 .training_box_title_wrap{
     flex: 1;
-    /* width: 270px;
-    min-width: 270px; */
+}
+
+.training_box_title_wrap p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.training_box_title_wrap ul{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.training_box_title_wrap ul li a{
+
+    transition: all ease .3s;
+}
+
+.training_box_title_wrap ul li a:hover{
+    color: #7d81bb;
 }
 
 .training_box_linkPref{
@@ -699,16 +719,14 @@ border-radius: 30px;
     right: -30px;
 }
 
-.section_education_title{
-    font-size: 30px;
-    color: #888888;
-    margin-bottom: 20px;
-}
+
 
 .section_education_body_title{
     text-align: center;
     margin-bottom: 20px;
-    color: #888888;
+    color: #868cd4;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .section_education_body_list ul{
@@ -725,13 +743,13 @@ border-radius: 30px;
     box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
 }
 
-.section_education_wrap .section_education_body:nth-child(odd){
+/* .section_education_wrap .section_education_body:nth-child(odd){
     background: -webkit-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
     background: -moz-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
     background: linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
 
     color: #fff;
-}
+} */
 
 .section_education_body_list table {
     width: 100%;
@@ -757,3 +775,36 @@ border-radius: 30px;
     flex-direction: column;
     gap: 50px;
 }
+
+.section_education_body_list p{
+    margin: 15px 0;
+}
+
+.section_education_body_list p:last-child{
+    margin-bottom: 0;
+}
+
+.section_education_link{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.section_education_link a, .section_education_body_list ul li a{
+    transition: all ease .3s;
+}
+.section_education_link a:hover, .section_education_body_list ul li a:hover{
+    color: #868cd4;
+}
+
+.list_dot{
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.education_desc, .education_title{
+    text-align: center;
+    margin: 15px 0;
+}
+
