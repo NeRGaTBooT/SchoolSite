@@ -18,4 +18,14 @@ $(document).ready(function(){
       autoplaySpeed: 2500
     });
 
+    $('.slider_about_header').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2500
+    });
+    
+
 });

@@ -55,6 +55,28 @@ body a{
     color: #000;
 }
 
+.btn_top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 999;
+    border: 1px solid #4C529D;
+    outline: none;
+    background-color: #4C529D;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    width: 50px;
+    height: 50px;
+  }
+  .btn_top:hover {
+    background-color: #656cce;
+    color: #fff;
+    transition: all ease 0.3s;
+  }
+
 /* 
 =============================================================
 HEADER
@@ -198,6 +220,11 @@ INDEX.HTML
     box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
 }
 
+.slider_body_items_img {
+    width: 46px;
+    height: 46px;
+}
+
 
 
 
@@ -279,7 +306,9 @@ SECTION ABOUT
     flex-wrap: wrap;
     gap: 20px;
 }
-
+.slider_about_header{
+    display: none;
+}
 
 .life_tabs_container{
     overflow: hidden;
