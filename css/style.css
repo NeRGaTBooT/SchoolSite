@@ -401,8 +401,8 @@ background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%
 }
 
 .content_items_desc{
-    display: -webkit-box; /* Чтобы поддержать Safari и Chrome */
-    display: -moz-box; /* Для Firefox */
+    display: -webkit-box; 
+    display: -moz-box; 
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -webkit-line-clamp: 9;
@@ -578,6 +578,11 @@ box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
     margin-bottom: 20px;
 }
 
+.section_news_items_title a {
+    color: #656cce;
+    text-decoration: underline;
+}
+
 .section_news_items_date{
     display: flex;
     align-items: center;
@@ -637,6 +642,46 @@ ONLINE_INQUIRIES.HTML
 =========================================================
 
 */
+
+.form_inquiries_wrap form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_inquiries_wrap form input, .input_wrap input, .form_inquiries_wrap select, .form_inquiries_wrap textarea{
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.input_wrap{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input_wrap input{
+    flex: 1;
+}
+
+.form_inquiries_wrap textarea{
+    resize: vertical;
+}
+
+.btn_form{
+    background: #4C529D;
+    width: max-content;
+    padding: 10px 20px !important;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.btn_form:hover{
+    background: #656cce;
+}
 
 /* 
 =========================================================
@@ -699,7 +744,14 @@ border-radius: 30px;
 .training_box_title_wrap ul{
     display: flex;
     flex-direction: column;
+}
 
+.training_box_title_wrap ul li{
+    margin-bottom: 3px;
+}
+
+.training_box_title_wrap ul li:last-child{
+    margin-bottom: 0;
 }
 
 .training_box_title_wrap ul li a{
@@ -791,12 +843,8 @@ border-radius: 30px;
     text-align: center;
 }
 
-.section_education_body_list table th {
-    /* background-color: #f2f2f2; */
-}
-
-.section_education_body_list table tr:nth-child(even) {
-    /* background-color: #f2f2f2; */
+.section_education_body ul li a{
+    text-decoration: underline;
 }
 
 .section_education_wrap {

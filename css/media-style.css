@@ -140,12 +140,43 @@
     .life_tabs{
         flex-direction: column;
     }
+
+    .tab_content_items{
+        min-width: 100%;
+    }
+
+    .training_box_wrap{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .training_box{
+        height: 100%;
+    }
+
+    .training_box_title_wrap{
+        flex: 0;
+    }
+
+    .training_box_linkPref{
+        margin-bottom: 30px;
+    }
+
+    .training_box_title_1 {
+        font-size: 25px;
+    }
+
+    .btn_form{
+        width: 100%;
+    }
 }
 
 @media (max-width: 375px) {
     .section_slider_title h1{
         font-size: 20px;
     }
+
+    
 
     
 }
