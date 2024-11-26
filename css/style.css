@@ -20,7 +20,6 @@ a{
     text-decoration: none;
 }
 
-
 :root {
     /* --color-theme-dark: #111111; 
     --color-theme-light: #f3f3f3;
@@ -30,7 +29,6 @@ a{
     --color-text: #2A211F;
     --color-btn-text: #fff; */
 }
-
 
 .container {
     width: 100%;
@@ -43,8 +41,15 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    background-color: #fcfcfc;
+}
 
+.body_bg{
+    background: rgb(148,93,214);
+    background: linear-gradient(180deg, rgba(148,93,214,1) 0%, rgba(214,228,255,1) 0%, rgba(150,187,255,1) 100%);
+}
+
+.body_bg .section_news_items, .body_bg .section_education_body{
+    background-color: #fff;
 }
 
 section, footer{
@@ -99,7 +104,6 @@ HEADER
 
 .burger-icon {
     outline: none; /* Убираем стандартное выделение при нажатии */
-
 }
 
 .burger img {
@@ -120,7 +124,6 @@ HEADER
     align-items: center;
     justify-content: space-between;
 }
-
 
 /* 
 =========================================================
@@ -154,7 +157,6 @@ INDEX.HTML
     font-weight: 700;
 }
 
-
 .header .main_menu ul a{
     display: block;
     color: #fff;
@@ -163,7 +165,6 @@ INDEX.HTML
     margin-bottom: -4px;
     transition: all ease .3s;
 }
-
 
 .header .main_menu ul a:hover{
     color: #d4d8ff;
@@ -225,15 +226,11 @@ INDEX.HTML
     height: 46px;
 }
 
-
-
-
 /* 
 =============================================================
 SECTION ABOUT
 =============================================================
 */
-
 
 .section_about_wrap{
     display: flex;
@@ -269,12 +266,9 @@ SECTION ABOUT
     box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
     padding: 20px;
     border-radius: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* max-height: 650px; */
-    /* overflow-y: scroll; */
 }
 
 .section_about_body p{
@@ -296,8 +290,7 @@ SECTION ABOUT
     display: block;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
-    
+    box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2); 
 }
 
 .section_about_header_body{
@@ -357,7 +350,7 @@ SECTION ABOUT
 
 .section_life{
     background: rgb(76,82,144);
-background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%, rgba(124,153,192,1) 100%);
+    background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%, rgba(124,153,192,1) 100%);
 }
 
 .tab_content_item_wrap{
@@ -371,7 +364,6 @@ background: linear-gradient(130deg, rgba(76,82,144,1) 0%, rgba(238,242,251,1) 0%
     min-width: 230px;
     background-color: #fff;
     border-radius: 20px;
-    /* height: 550px; */
     display: flex;
     flex-direction: column;
     min-width: 360px;
@@ -562,14 +554,12 @@ NEWS.HTML
     gap: 20px;
 }
 
-
 .section_news_items{
     padding: 25px;
     border-radius: 30px;
     -webkit-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
--moz-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
-
+    -moz-box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
 }
 
 .section_news_items_title{
@@ -622,17 +612,6 @@ box-shadow: 0px 5px 30px 2px rgba(34, 60, 80, 0.2);
 .news_items_body_desc ol{
     padding-left: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 =========================================================
@@ -703,9 +682,9 @@ TRAINING.HTML
 
 .section_training{
     background: -webkit-linear-gradient(180deg, rgb(76, 82, 157), rgb(127, 152, 202));
-background: -moz-linear-gradient(180deg, rgb(76, 82, 157), rgb(127, 152, 202));
-background: linear-gradient(180deg, rgb(76, 82, 157), rgb(127, 152, 202));
-color: #fff;
+    background: -moz-linear-gradient(180deg, rgb(76, 82, 157), rgb(127, 152, 202));
+    background: linear-gradient(180deg, rgb(76, 82, 157), rgb(127, 152, 202));
+    color: #fff;
 }
 
 .section_training a{
@@ -714,13 +693,13 @@ color: #fff;
 
 .training_box{
     background: -webkit-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
-background: -moz-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
-background: linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
+    background: -moz-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
+    background: linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
 
-width: 100%;
-height: 500px;
-padding: 30px;
-border-radius: 30px;
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    border-radius: 30px;
 }
 
 .training_box_wrap{
@@ -755,12 +734,12 @@ border-radius: 30px;
 }
 
 .training_box_title_wrap ul li a{
-
     transition: all ease .3s;
 }
 
 .training_box_title_wrap ul li a:hover{
     color: #7d81bb;
+    padding-left: 5px;
 }
 
 .training_box_linkPref{
@@ -788,19 +767,17 @@ border-radius: 30px;
 }
 
 .training_box_linkPref::after{
-    content: ""; /* Обязательное свойство для псевдоэлементов */
-    display: inline-block; /* Чтобы псевдоэлемент вел себя как блочный */
-    width: 20px; /* Ширина иконки */
-    height: 20px; /* Высота иконки */
-    background-image: url('../img/icons/chevron-back.svg'); /* Путь к изображению */
-    background-size: cover; /* Размер иконки */
-    margin-right: 5px; /* Отступ справа от иконки */
+    content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../img/icons/chevron-back.svg'); 
+    background-size: cover; 
+    margin-right: 5px; 
     position: absolute;
     top: 4px;
     right: -30px;
 }
-
-
 
 .section_education_body_title{
     text-align: center;
@@ -813,7 +790,6 @@ border-radius: 30px;
 .section_education_body_list ul{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .section_education_body{
@@ -823,14 +799,6 @@ border-radius: 30px;
     -moz-box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 10px 10px 43px 0px rgba(34, 60, 80, 0.2);
 }
-
-/* .section_education_wrap .section_education_body:nth-child(odd){
-    background: -webkit-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
-    background: -moz-linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
-    background: linear-gradient(135deg, rgb(77, 64, 120), rgb(121, 111, 154));
-
-    color: #fff;
-} */
 
 .section_education_body_list table {
     width: 100%;
@@ -884,4 +852,3 @@ border-radius: 30px;
     text-align: center;
     margin: 15px 0;
 }
-
