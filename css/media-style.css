@@ -1,6 +1,5 @@
 /* Стили для мобильной версии */
 @media (max-width: 1140px) {
-    
     .main_menu {
         display: none; /* Скрыть навигацию по умолчанию */
         width: 100%;
@@ -13,22 +12,18 @@
         transform: translatey(-1000px); /* Начальное смещение */
         transition: opacity 0.7s ease, transform 0.7s ease; /* Плавный переход */ 
     }
-
     .header_wrap{
         padding: 15px 0;
     }
-
     .main_menu ul{
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-
     .main_menu ul li{
         width: 100%;
         text-align: center;
     }
-
     .header .main_menu ul a{
         padding: 10px 0;
         border-bottom: none;
@@ -37,14 +32,11 @@
         width: 100%;
         color: #000;
     }
-    
-    
     .header .main_menu ul a:hover{
         color: #d4d8ff;
         margin-bottom: 0;
         border-bottom: none;
     }
-
     .main_menu.active {
         display: block; 
         opacity: 1; 
@@ -53,14 +45,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .burger {
         display: flex; 
     }
-}
-
-@media (max-width: 1024px) {
-
 }
 
 @media (max-width: 768px) {
@@ -72,26 +59,21 @@
     .section_education_body_list table tr {
         display: block;
     }
-
     .section_education_body_list table thead tr {
         display: none;
     }
-
     .section_education_body_list table tr {
         margin-bottom: 10px;
         border: 1px solid #ccc;
     }
-
     .section_education_body_list table td {
         text-align: left;
     }
-
     .section_education_body_list table td:before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
     }
-
     .section_about_header_body{
         display: none;
     }
@@ -102,19 +84,15 @@
     .section_about_wrap{
         flex-direction: column;
     }
-
     .section_about_header{
         width: 100%;
     }
-
     .slick-slider .slick-list, .slick-slider .slick-track{
         height: 100%;
     }
-
     .slick-slider .slick-list{
         border-radius: 30px;
     }
-
     .slider_about_header img{
         object-position: center;
         width: 100%;
@@ -130,40 +108,31 @@
     .section_slider_body{
         flex-direction: column;
     }
-
     .life_tabs{
         flex-direction: column;
     }
-
     .tab_content_items{
         min-width: 100%;
     }
-
     .training_box_wrap{
         flex-direction: column;
         align-items: start;
     }
-
     .training_box{
         height: 100%;
     }
-
     .training_box_title_wrap{
         flex: 0;
     }
-
     .training_box_linkPref{
         margin-bottom: 30px;
     }
-
     .training_box_title_1 {
         font-size: 25px;
     }
-
     .btn_form{
         width: 100%;
     }
-
     .news_items_body_img{
         height: 100%;
     }

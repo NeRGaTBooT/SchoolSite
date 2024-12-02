@@ -19,6 +19,7 @@ burger.addEventListener('click', () => {
     }
 });
 
+// Табы
 document.querySelectorAll('.tab-button').forEach(button => {
     button.addEventListener('click', () => {
         // Удаляем активный класс у всех кнопок
@@ -35,13 +36,17 @@ document.querySelectorAll('.tab-button').forEach(button => {
     });
 });
 
+// Плавный переход по якорям
+// Выбираем все элементы с классом 'anchor' и добавляем обработчик события клика
 document.querySelectorAll('a.anchor').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+        // Предотвращаем стандартное поведение ссылки
         e.preventDefault();
-
+        // Получаем id целевого элемента из атрибута 'href' ссылки, игнорируя первый символ '#'
         const targetId = this.getAttribute('href').substring(1);
+        // Находим элемент на странице по его id
         const targetElement = document.getElementById(targetId);
-
+        // Если элемент найден, прокручиваем страницу к нему плавно
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop,
@@ -51,28 +56,18 @@ document.querySelectorAll('a.anchor').forEach(anchor => {
     });
 });
 
+// Кнопка  скролла вверх
 $(function() {
-
+    // Показывать/скрывать кнопку "наверх" в зависимости от позиции прокрутки
     $(window).scroll(function() {
         if ($(this).scrollTop() != 0) {
-            $('.btn_top').fadeIn();
+            $('.btn_top').fadeIn(); // Плавно показываем кнопку
         } else {
-            $('.btn_top').fadeOut();
+            $('.btn_top').fadeOut(); // Плавно скрываем кнопку
         }
     });
-
-
+    // Прокрутка страницы вверх при клике на кнопку "наверх"
     $('.btn_top').click(function() {
-        $('body,html').animate({ scrollTop: 0 }, 800);
+        $('body,html').animate({ scrollTop: 0 }, 800); // Плавная анимация прокрутки
     });
-
-
-    $("#menu, #myNav").on("click", "a", function(event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1000);
-    });
-
-
 });
